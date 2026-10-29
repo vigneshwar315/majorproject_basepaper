@@ -1,0 +1,68 @@
+{
+  "_comment": "Values REPORTED BY THE PAPER (Ghiani, Manni, Zacchino, IEEE Access 13:149777-149788, 2025). These were NOT produced by this project's code. Never mix with reproduced results without an explicit label.",
+  "source": {"doi": "10.1109/ACCESS.2025.3601518", "llm": "GPT-4o ('ChatGTP-4o' in the paper)", "framework": "LangChain 0.3", "verified_against": "page images of base_paper.pdf"},
+  "table3_C1_dmg_accuracy": {
+    "page": "149784 (PDF p8), Table 3",
+    "prompts_per_type": 30,
+    "rows": {
+      "T": {"generated": 27, "avg_attempts": 1.42, "tests_passed": 27},
+      "TF": {"generated": 25, "avg_attempts": 1.58, "tests_passed": 25},
+      "TFP": {"generated": 27, "avg_attempts": 1.42, "tests_passed": 27}
+    }
+  },
+  "table5_C2_mcdm_accuracy": {
+    "page": "149785 (PDF p9), Table 5",
+    "out_of": 30,
+    "correct_by_m": {"10": 30, "50": 28, "100": 25}
+  },
+  "table6_C3_robustness": {
+    "page": "149785 (PDF p9), Table 6",
+    "note": "denominators not stated in the paper (generated counts 18/21/24)",
+    "rows": {
+      "T": {"informal": {"generated": 21, "passed": 21}, "unclear": {"generated": 18, "passed": 15}, "ambiguous": {"generated": 18, "passed": 15}},
+      "TF": {"informal": {"generated": 18, "passed": 18}, "unclear": {"generated": 18, "passed": 18}, "ambiguous": {"generated": 21, "passed": 21}},
+      "TFP": {"informal": {"generated": 24, "passed": 24}, "unclear": {"generated": 24, "passed": 24}, "ambiguous": {"generated": 24, "passed": 24}}
+    }
+  },
+  "table7_C4_prompt_clarity": {
+    "page": "149785 (PDF p9), Table 7",
+    "out_of": 30,
+    "correct_by_degradation_level": {"1": 30, "2": 30, "3": 24}
+  },
+  "table8_C5_tokens_time": {
+    "page": "149785 (PDF p9), Table 8",
+    "note": "hardware, network and model snapshot not stated",
+    "dmg": {"code_generation": {"tokens_per_run": 7114, "time_s": 3.75}, "validation": {"tokens_per_run": 6254, "time_s": 0.99}},
+    "mcdm": {
+      "10": {"tokens_per_run": 1713, "time_s": 4.27},
+      "50": {"tokens_per_run": 5537, "time_s": 6.12},
+      "100": {"tokens_per_run": 10107, "time_s": 7.16},
+      "200": {"tokens_per_run": 21882, "time_s": 10.27},
+      "500": {"tokens_per_run": 54772, "time_s": 12.42},
+      "1000": {"tokens_per_run": 109736, "time_s": 15.09}
+    }
+  },
+  "table9_example_evaluation_matrix": {
+    "page": "149786 (PDF p10), Table 9",
+    "metric_ids": ["z1", "z2", "z3", "z4", "z5", "z6", "z7", "z8", "z9", "z10"],
+    "rows": {
+      "pi_1": [0.98, 1.00, 2352, 4248, 526, 18, 2, 7, 230, 305],
+      "pi_2": [0.97, 1.00, 2430, 4409, 502, 232, 34, 5, 225, 315],
+      "pi_3": [0.98, 1.00, 2190, 4294, 513, 140, 7, 4, 235, 305],
+      "pi_4": [0.97, 1.00, 2115, 3759, 493, 47, 15, 11, 230, 315],
+      "pi_5": [0.97, 1.00, 2167, 4318, 482, 109, 7, 6, 220, 330],
+      "pi_6": [0.93, 1.00, 2154, 3612, 454, 72, 41, 8, 200, 300],
+      "pi_7": [0.95, 0.94, 2140, 4318, 467, 185, 44, 7, 220, 320],
+      "pi_8": [0.98, 1.00, 2408, 4361, 475, 340, 41, 4, 205, 325],
+      "pi_9": [0.97, 1.00, 2400, 3499, 513, 212, 1, 8, 230, 295],
+      "pi_10": [0.98, 1.00, 2277, 4322, 481, 230, 28, 5, 230, 360]
+    },
+    "example_decision": {"trade_off_prompt": 3, "selected": "pi_3", "note": "justification example on p.149785-86 (the paper cites 'z8 = 235' where Table 9 shows 235 under z9)"}
+  },
+  "section_IVC_human_comparison": {
+    "page": "149786 (PDF p10), Fig. 2",
+    "participants": 10,
+    "average_attempts": 19.8,
+    "note": "illustrative only; the authors state the figures are not generalizable; raw data NOT AVAILABLE; study not reproducible by software"
+  }
+}

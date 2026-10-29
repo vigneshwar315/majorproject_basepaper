@@ -1,0 +1,97 @@
+{
+ "name": "tiny",
+ "depot": {
+  "x": 0,
+  "y": 0,
+  "zip": "00100"
+ },
+ "vehicles": [
+  {
+   "id": "V1",
+   "capacity": 3,
+   "shift_duration": 480.0
+  },
+  {
+   "id": "V2",
+   "capacity": 3,
+   "shift_duration": 480.0
+  }
+ ],
+ "requests": [
+  {
+   "id": "a",
+   "arrival_day": 0,
+   "arrival_seq": 0,
+   "pickup": {
+    "x": 3,
+    "y": 4,
+    "zip": "00100"
+   },
+   "delivery": {
+    "x": 6,
+    "y": 8,
+    "zip": "00200"
+   },
+   "demand": 1,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": null
+  },
+  {
+   "id": "b",
+   "arrival_day": 0,
+   "arrival_seq": 1,
+   "pickup": {
+    "x": 0,
+    "y": 5,
+    "zip": "00100"
+   },
+   "delivery": {
+    "x": 0,
+    "y": 10,
+    "zip": "00200"
+   },
+   "demand": 2,
+   "priority": 1,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": null
+  },
+  {
+   "id": "c",
+   "arrival_day": 1,
+   "arrival_seq": 0,
+   "pickup": {
+    "x": 10,
+    "y": 0,
+    "zip": "00300"
+   },
+   "delivery": {
+    "x": 10,
+    "y": 5,
+    "zip": "00300"
+   },
+   "demand": 1,
+   "priority": 0,
+   "pickup_tw": {
+    "earliest": 600,
+    "latest": 660
+   },
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": null
+  }
+ ],
+ "horizon_days": 3,
+ "current_day": 1,
+ "shift_start": 480.0,
+ "depot_close": 1200.0,
+ "minutes_per_unit": 1.0,
+ "max_lead_days": 1,
+ "distance_matrix": null,
+ "synthetic": false,
+ "description": "Hand-built example for unit tests and documentation."
+}

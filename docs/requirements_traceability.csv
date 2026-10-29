@@ -1,0 +1,33 @@
+req_id,requirement,source_ref,status,planned_module,test,experiment,evidence_artifact
+R01,Multi-period dynamic VRP with pickups and deliveries,"p.149782 IV-A",VERIFIED,src/paper_replication/problem_instance.py;schemas.py,tests/unit/test_instance.py,DEMO,results/runs/<run_id>/instance.json
+R02,Central depot and fleet with limited capacity,"p.149782 IV-A",VERIFIED,schemas.py;constraints.py,tests/unit/test_constraints.py,DEMO,results/runs/<run_id>/candidates.json
+R03,Dynamic request arrivals processed sequentially,"p.149782 IV-A",VERIFIED,insertion_heuristic.py,tests/unit/test_insertion.py,DEMO,results/runs/<run_id>/candidates.json
+R04,Priority levels and optional pickup/delivery time windows,"p.149782 IV-A",VERIFIED,schemas.py;constraints.py,tests/unit/test_constraints.py,DEMO,results/runs/<run_id>/instance.json
+R05,Accept/reject decision; accepted request gets vehicle+day+position,"p.149782 IV-A",VERIFIED,insertion_heuristic.py,tests/unit/test_insertion.py,DEMO,results/runs/<run_id>/candidates.json
+R06,Timing recursion a/s/d/w,"p.149784 IV-B1",VERIFIED,constraints.py,tests/unit/test_constraints.py,DEMO,tests (hand-computed values)
+R07,Cheapest-insertion heuristic,"p.149783 IV-A",PARTIALLY SPECIFIED,insertion_heuristic.py,tests/unit/test_insertion.py;tests/regression/test_regression.py,DEMO,results/runs/<run_id>/candidates.json
+R08,Heuristic returns m alternative plans,"p.149783 IV-A",PARTIALLY SPECIFIED,candidate_generation.py,tests/unit/test_candidates.py,C2;C5,results/experiments/C2/<run_id>/results.csv
+R09,No plan labelled feasible without deterministic validation,"project brief Sec.3 rule/Phase 4",VERIFIED,constraints.py;pipeline.py,tests/unit/test_constraints.py;tests/integration/test_pipeline.py,DEMO,results/runs/<run_id>/candidates.json
+R10,Metrics z1..z10 (Table 2),"p.149783 Table 2",PARTIALLY SPECIFIED,reference_metrics.py;dmg/evaluation.py,tests/unit/test_metrics_reference.py,C1,results/experiments/C1/<run_id>/results.csv
+R11,DMG: generate metric from natural-language prompt,"p.149781 III-A",VERIFIED,dmg/generation.py;dmg/metric_specification.py,tests/unit/test_dmg.py,C1,results/experiments/C1/<run_id>/results.csv
+R12,DMG Algorithm 1 loop with bounded self-debugging,"p.149782 Algorithm 1",VERIFIED,dmg/generation.py,tests/unit/test_dmg.py,C1,results/experiments/C1/<run_id>/attempts.json
+R13,DMG LLM validation of spec vs description,"p.149781 III-C(a)",VERIFIED,dmg/validation.py,tests/unit/test_dmg.py,C1,results/runs/<run_id>/dmg_trace.json
+R14,DMG execution on 3 examples vs expected results,"p.149781 III-C(b); p.149783",VERIFIED,dmg/evaluation.py;dmg/examples.py,tests/unit/test_dmg.py,C1,results/experiments/C1/<run_id>/results.csv
+R15,Failure -> warning to supervisor,"p.149781 III-C",VERIFIED,dmg/generation.py;pipeline.py,tests/unit/test_dmg.py,C1;C3,results/runs/<run_id>/dmg_trace.json
+R16,No arbitrary code execution for generated metrics,"project brief Sec.3 rule 7",DEVIATION,dmg/metric_specification.py;dmg/evaluation.py,tests/unit/test_dsl.py,C1,docs/uncertainties_and_deviations.md#U01
+R17,Prompt types T/TF/TFP,"p.149783 IV-B1",VERIFIED,experiments/prompt_sets.py,tests/unit/test_prompt_sets.py,C1,results/experiments/C1/<run_id>/results.csv
+R18,Test C1 DMG correctness (Table 3),"p.149783-84",VERIFIED,experiments/runner.py,tests/integration/test_experiments.py,C1,results/experiments/C1/<run_id>/summary.json
+R19,MCDM: select pi* from evaluation matrix + trade-off prompt,"p.149781 III-B",VERIFIED,mcdm/selection.py;mcdm/prompts.py,tests/unit/test_mcdm.py,C2,results/runs/<run_id>/mcdm_trace.json
+R20,MCDM output must reference an existing feasible candidate id,"project brief Phase 6",VERIFIED,mcdm/validation.py,tests/unit/test_mcdm.py,C2,results/runs/<run_id>/mcdm_trace.json
+R21,Decision justification,"p.149781-82 III-D",VERIFIED,mcdm/selection.py,tests/unit/test_mcdm.py,C6,results/experiments/C6/<run_id>/results.csv
+R22,Test C2 MCDM accuracy m=10/50/100 (Table 5),"p.149784-85",VERIFIED,experiments/runner.py;mcdm/reference_rules.py,tests/integration/test_experiments.py,C2,results/experiments/C2/<run_id>/summary.json
+R23,Test C3 robustness to ill-defined metric prompts (Table 6),"p.149785",VERIFIED,experiments/runner.py;experiments/prompt_sets.py,tests/integration/test_experiments.py,C3,results/experiments/C3/<run_id>/summary.json
+R24,Test C4 trade-off prompt clarity levels 1-3 (Table 7),"p.149785",VERIFIED,experiments/runner.py;experiments/prompt_sets.py,tests/integration/test_experiments.py,C4,results/experiments/C4/<run_id>/summary.json
+R25,Test C5 tokens and time vs m (Table 8),"p.149785",VERIFIED,experiments/runner.py,tests/integration/test_experiments.py,C5,results/experiments/C5/<run_id>/summary.json
+R26,Test C6 interpretability of justifications,"p.149785-86",VERIFIED,experiments/runner.py;mcdm/validation.py,tests/unit/test_mcdm.py,C6,results/experiments/C6/<run_id>/results.csv
+R27,Human comparison (IV-C),"p.149786 Fig.2",NOT AVAILABLE,-,-,NOT RUN,data/paper_reference_values.json
+R28,Runtime LLM GPT-4o + LangChain 0.3,"p.149783",PARTIALLY SPECIFIED,llm/*.py,tests/unit/test_providers.py,-,docs/uncertainties_and_deviations.md#U02
+R29,Configurable provider adapter (Gemini/OpenAI/mock) via env,"project brief Sec.2",VERIFIED,config.py;llm/__init__.py,tests/unit/test_config.py;tests/unit/test_providers.py,-,.env.example
+R30,No secrets in logs/UI/reports,"project brief Sec.2",VERIFIED,redact.py,tests/unit/test_config.py,-,tests/unit/test_config.py
+R31,Paper reference values stored separately from produced results,"project brief Phase 8",VERIFIED,experiments/paper_reference.py,tests/unit/test_paper_reference.py,C1-C6,data/paper_reference_values.json
+R32,Streamlit dashboard connected to real backend,"project brief Phase 9",VERIFIED,app.py;frontend/*,tests/ui/test_app_smoke.py;tests/ui/test_ui_helpers.py,-,docs/screenshots/*.png

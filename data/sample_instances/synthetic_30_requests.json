@@ -1,0 +1,699 @@
+{
+ "name": "synthetic_seed20251028_n30",
+ "depot": {
+  "x": 60.0,
+  "y": 60.0,
+  "zip": "10004"
+ },
+ "vehicles": [
+  {
+   "id": "V1",
+   "capacity": 6,
+   "shift_duration": 480.0
+  },
+  {
+   "id": "V2",
+   "capacity": 6,
+   "shift_duration": 480.0
+  },
+  {
+   "id": "V3",
+   "capacity": 6,
+   "shift_duration": 480.0
+  }
+ ],
+ "requests": [
+  {
+   "id": "r1",
+   "arrival_day": 0,
+   "arrival_seq": 0,
+   "pickup": {
+    "x": 12.51,
+    "y": 27.32,
+    "zip": "10000"
+   },
+   "delivery": {
+    "x": 76.62,
+    "y": 33.73,
+    "zip": "10001"
+   },
+   "demand": 1,
+   "priority": 1,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c5"
+  },
+  {
+   "id": "r2",
+   "arrival_day": 0,
+   "arrival_seq": 1,
+   "pickup": {
+    "x": 1.11,
+    "y": 41.94,
+    "zip": "10003"
+   },
+   "delivery": {
+    "x": 62.75,
+    "y": 115.4,
+    "zip": "10007"
+   },
+   "demand": 2,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c9"
+  },
+  {
+   "id": "r3",
+   "arrival_day": 0,
+   "arrival_seq": 2,
+   "pickup": {
+    "x": 21.89,
+    "y": 5.86,
+    "zip": "10000"
+   },
+   "delivery": {
+    "x": 56.42,
+    "y": 95.26,
+    "zip": "10007"
+   },
+   "demand": 2,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c1"
+  },
+  {
+   "id": "r4",
+   "arrival_day": 0,
+   "arrival_seq": 3,
+   "pickup": {
+    "x": 100.27,
+    "y": 37.41,
+    "zip": "10002"
+   },
+   "delivery": {
+    "x": 67.17,
+    "y": 16.3,
+    "zip": "10001"
+   },
+   "demand": 1,
+   "priority": 1,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c7"
+  },
+  {
+   "id": "r5",
+   "arrival_day": 0,
+   "arrival_seq": 4,
+   "pickup": {
+    "x": 63.36,
+    "y": 65.29,
+    "zip": "10004"
+   },
+   "delivery": {
+    "x": 14.1,
+    "y": 40.25,
+    "zip": "10003"
+   },
+   "demand": 3,
+   "priority": 1,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c7"
+  },
+  {
+   "id": "r6",
+   "arrival_day": 0,
+   "arrival_seq": 5,
+   "pickup": {
+    "x": 72.67,
+    "y": 83.65,
+    "zip": "10007"
+   },
+   "delivery": {
+    "x": 78.1,
+    "y": 21.67,
+    "zip": "10001"
+   },
+   "demand": 1,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c3"
+  },
+  {
+   "id": "r7",
+   "arrival_day": 0,
+   "arrival_seq": 6,
+   "pickup": {
+    "x": 104.31,
+    "y": 44.69,
+    "zip": "10005"
+   },
+   "delivery": {
+    "x": 112.48,
+    "y": 54.39,
+    "zip": "10005"
+   },
+   "demand": 1,
+   "priority": 1,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c5"
+  },
+  {
+   "id": "r8",
+   "arrival_day": 0,
+   "arrival_seq": 7,
+   "pickup": {
+    "x": 109.55,
+    "y": 78.75,
+    "zip": "10005"
+   },
+   "delivery": {
+    "x": 78.59,
+    "y": 1.88,
+    "zip": "10001"
+   },
+   "demand": 1,
+   "priority": 0,
+   "pickup_tw": {
+    "earliest": 511.0,
+    "latest": 556.0
+   },
+   "delivery_tw": {
+    "earliest": 578.0,
+    "latest": 623.0
+   },
+   "service_time": 0.0,
+   "customer_id": "c15"
+  },
+  {
+   "id": "r9",
+   "arrival_day": 0,
+   "arrival_seq": 8,
+   "pickup": {
+    "x": 87.92,
+    "y": 2.08,
+    "zip": "10002"
+   },
+   "delivery": {
+    "x": 73.57,
+    "y": 84.05,
+    "zip": "10007"
+   },
+   "demand": 1,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c9"
+  },
+  {
+   "id": "r10",
+   "arrival_day": 0,
+   "arrival_seq": 9,
+   "pickup": {
+    "x": 44.53,
+    "y": 53.2,
+    "zip": "10004"
+   },
+   "delivery": {
+    "x": 36.54,
+    "y": 68.72,
+    "zip": "10003"
+   },
+   "demand": 1,
+   "priority": 0,
+   "pickup_tw": {
+    "earliest": 750.0,
+    "latest": 780.0
+   },
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c15"
+  },
+  {
+   "id": "r11",
+   "arrival_day": 0,
+   "arrival_seq": 10,
+   "pickup": {
+    "x": 55.12,
+    "y": 87.26,
+    "zip": "10007"
+   },
+   "delivery": {
+    "x": 94.77,
+    "y": 7.37,
+    "zip": "10002"
+   },
+   "demand": 2,
+   "priority": 0,
+   "pickup_tw": {
+    "earliest": 759.0,
+    "latest": 999.0
+   },
+   "delivery_tw": {
+    "earliest": 806.0,
+    "latest": 1046.0
+   },
+   "service_time": 0.0,
+   "customer_id": "c16"
+  },
+  {
+   "id": "r12",
+   "arrival_day": 1,
+   "arrival_seq": 0,
+   "pickup": {
+    "x": 25.81,
+    "y": 19.58,
+    "zip": "10000"
+   },
+   "delivery": {
+    "x": 3.58,
+    "y": 102.8,
+    "zip": "10006"
+   },
+   "demand": 1,
+   "priority": 1,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c10"
+  },
+  {
+   "id": "r13",
+   "arrival_day": 1,
+   "arrival_seq": 1,
+   "pickup": {
+    "x": 38.21,
+    "y": 47.63,
+    "zip": "10003"
+   },
+   "delivery": {
+    "x": 50.36,
+    "y": 50.5,
+    "zip": "10004"
+   },
+   "demand": 3,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c7"
+  },
+  {
+   "id": "r14",
+   "arrival_day": 1,
+   "arrival_seq": 2,
+   "pickup": {
+    "x": 61.22,
+    "y": 110.23,
+    "zip": "10007"
+   },
+   "delivery": {
+    "x": 28.08,
+    "y": 9.9,
+    "zip": "10000"
+   },
+   "demand": 1,
+   "priority": 1,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c6"
+  },
+  {
+   "id": "r15",
+   "arrival_day": 1,
+   "arrival_seq": 3,
+   "pickup": {
+    "x": 50.67,
+    "y": 93.74,
+    "zip": "10007"
+   },
+   "delivery": {
+    "x": 2.46,
+    "y": 110.15,
+    "zip": "10006"
+   },
+   "demand": 1,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c15"
+  },
+  {
+   "id": "r16",
+   "arrival_day": 1,
+   "arrival_seq": 4,
+   "pickup": {
+    "x": 89.46,
+    "y": 107.78,
+    "zip": "10008"
+   },
+   "delivery": {
+    "x": 89.03,
+    "y": 49.27,
+    "zip": "10005"
+   },
+   "demand": 1,
+   "priority": 0,
+   "pickup_tw": {
+    "earliest": 708.0,
+    "latest": 948.0
+   },
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c2"
+  },
+  {
+   "id": "r17",
+   "arrival_day": 1,
+   "arrival_seq": 5,
+   "pickup": {
+    "x": 1.22,
+    "y": 30.2,
+    "zip": "10000"
+   },
+   "delivery": {
+    "x": 75.15,
+    "y": 2.86,
+    "zip": "10001"
+   },
+   "demand": 3,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c6"
+  },
+  {
+   "id": "r18",
+   "arrival_day": 2,
+   "arrival_seq": 0,
+   "pickup": {
+    "x": 10.92,
+    "y": 52.37,
+    "zip": "10003"
+   },
+   "delivery": {
+    "x": 29.63,
+    "y": 50.33,
+    "zip": "10003"
+   },
+   "demand": 1,
+   "priority": 1,
+   "pickup_tw": {
+    "earliest": 852.0,
+    "latest": 1032.0
+   },
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c15"
+  },
+  {
+   "id": "r19",
+   "arrival_day": 2,
+   "arrival_seq": 1,
+   "pickup": {
+    "x": 87.65,
+    "y": 76.16,
+    "zip": "10005"
+   },
+   "delivery": {
+    "x": 80.84,
+    "y": 84.41,
+    "zip": "10008"
+   },
+   "demand": 3,
+   "priority": 0,
+   "pickup_tw": {
+    "earliest": 531.0,
+    "latest": 771.0
+   },
+   "delivery_tw": {
+    "earliest": 596.0,
+    "latest": 836.0
+   },
+   "service_time": 0.0,
+   "customer_id": "c16"
+  },
+  {
+   "id": "r20",
+   "arrival_day": 2,
+   "arrival_seq": 2,
+   "pickup": {
+    "x": 40.84,
+    "y": 14.75,
+    "zip": "10001"
+   },
+   "delivery": {
+    "x": 107.86,
+    "y": 41.98,
+    "zip": "10005"
+   },
+   "demand": 2,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c16"
+  },
+  {
+   "id": "r21",
+   "arrival_day": 2,
+   "arrival_seq": 3,
+   "pickup": {
+    "x": 105.06,
+    "y": 78.37,
+    "zip": "10005"
+   },
+   "delivery": {
+    "x": 50.02,
+    "y": 33.69,
+    "zip": "10001"
+   },
+   "demand": 3,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c15"
+  },
+  {
+   "id": "r22",
+   "arrival_day": 2,
+   "arrival_seq": 4,
+   "pickup": {
+    "x": 65.67,
+    "y": 3.88,
+    "zip": "10001"
+   },
+   "delivery": {
+    "x": 56.9,
+    "y": 57.62,
+    "zip": "10004"
+   },
+   "demand": 1,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c7"
+  },
+  {
+   "id": "r23",
+   "arrival_day": 2,
+   "arrival_seq": 5,
+   "pickup": {
+    "x": 110.78,
+    "y": 2.37,
+    "zip": "10002"
+   },
+   "delivery": {
+    "x": 19.48,
+    "y": 47.86,
+    "zip": "10003"
+   },
+   "demand": 1,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c5"
+  },
+  {
+   "id": "r24",
+   "arrival_day": 2,
+   "arrival_seq": 6,
+   "pickup": {
+    "x": 57.94,
+    "y": 64.68,
+    "zip": "10004"
+   },
+   "delivery": {
+    "x": 35.49,
+    "y": 20.55,
+    "zip": "10000"
+   },
+   "demand": 1,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c2"
+  },
+  {
+   "id": "r25",
+   "arrival_day": 2,
+   "arrival_seq": 7,
+   "pickup": {
+    "x": 33.76,
+    "y": 58.47,
+    "zip": "10003"
+   },
+   "delivery": {
+    "x": 39.62,
+    "y": 63.9,
+    "zip": "10003"
+   },
+   "demand": 2,
+   "priority": 1,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c10"
+  },
+  {
+   "id": "r26",
+   "arrival_day": 2,
+   "arrival_seq": 8,
+   "pickup": {
+    "x": 63.54,
+    "y": 9.58,
+    "zip": "10001"
+   },
+   "delivery": {
+    "x": 24.55,
+    "y": 39.24,
+    "zip": "10000"
+   },
+   "demand": 3,
+   "priority": 1,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c5"
+  },
+  {
+   "id": "r27",
+   "arrival_day": 2,
+   "arrival_seq": 9,
+   "pickup": {
+    "x": 85.01,
+    "y": 9.53,
+    "zip": "10002"
+   },
+   "delivery": {
+    "x": 4.02,
+    "y": 25.31,
+    "zip": "10000"
+   },
+   "demand": 3,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c12"
+  },
+  {
+   "id": "r28",
+   "arrival_day": 2,
+   "arrival_seq": 10,
+   "pickup": {
+    "x": 50.08,
+    "y": 41.53,
+    "zip": "10004"
+   },
+   "delivery": {
+    "x": 17.2,
+    "y": 26.19,
+    "zip": "10000"
+   },
+   "demand": 3,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c2"
+  },
+  {
+   "id": "r29",
+   "arrival_day": 2,
+   "arrival_seq": 11,
+   "pickup": {
+    "x": 49.86,
+    "y": 96.57,
+    "zip": "10007"
+   },
+   "delivery": {
+    "x": 101.99,
+    "y": 116.21,
+    "zip": "10008"
+   },
+   "demand": 3,
+   "priority": 0,
+   "pickup_tw": {
+    "earliest": 647.0,
+    "latest": 692.0
+   },
+   "delivery_tw": {
+    "earliest": 712.0,
+    "latest": 757.0
+   },
+   "service_time": 0.0,
+   "customer_id": "c13"
+  },
+  {
+   "id": "r30",
+   "arrival_day": 2,
+   "arrival_seq": 12,
+   "pickup": {
+    "x": 102.56,
+    "y": 12.07,
+    "zip": "10002"
+   },
+   "delivery": {
+    "x": 28.37,
+    "y": 20.09,
+    "zip": "10000"
+   },
+   "demand": 3,
+   "priority": 0,
+   "pickup_tw": null,
+   "delivery_tw": null,
+   "service_time": 0.0,
+   "customer_id": "c17"
+  }
+ ],
+ "horizon_days": 4,
+ "current_day": 2,
+ "shift_start": 480.0,
+ "depot_close": 1200.0,
+ "minutes_per_unit": 1.0,
+ "max_lead_days": 2,
+ "distance_matrix": null,
+ "synthetic": true,
+ "description": "SYNTHETIC instance generated by paper_replication.problem_instance.generate_instance (the base paper provides no dataset)."
+}
